@@ -15,3 +15,9 @@ docker run -d -p 8080:8080 --name whiteboard rofl256/whiteboard
 
 # Excalidraw (pizarra colaborativa)
 docker run -d -p 8080:80 --name excalidraw excalidraw/excalidraw
+
+# Actual Budget (presupuestos)
+docker run -d -p 8080:5006 --name actual actualbudget/actual-server
+
+# VS Code en navegador
+docker run -d -p 8080:8080 --name vscode codercom/code-server
