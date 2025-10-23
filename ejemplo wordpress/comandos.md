@@ -1,3 +1,14 @@
-docker build -t mi-web-docker .
+# Levantar todos los servicios
+docker-compose up -d
 
-docker run -d -p 8080:80 mi-web-docker
+# Ver el estado
+docker-compose ps
+
+# Ver logs
+docker-compose logs -f
+
+# Detener todo
+docker-compose down
+
+# Detener y eliminar volúmenes
+docker-compose down -v
