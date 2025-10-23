@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐳 Mi Primer Docker</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            animation: fadeIn 1s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .whale {
+            font-size: 100px;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin: 10px 5px;
+            font-weight: bold;
+        }
+        
+        .success {
+            background: #10b981;
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="whale">🐳</div>
+        <h1>¡Hola Docker!</h1>
+        <p>Si estás viendo esto, tu contenedor está funcionando perfectamente 🎉</p>
+        
+        <div>
+            <span class="badge">🚀 Nginx</span>
+            <span class="badge">🐋 Docker</span>
+            <span class="badge">✨ Alpine Linux</span>
+        </div>
+        
+        <div class="success">
+            ✅ Contenedor desplegado con éxito
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 0.9em; opacity: 0.8;">
+            Construido con ❤️ para tu charla de Docker
+        </p>
+    </div>
+</body>
+</html>
