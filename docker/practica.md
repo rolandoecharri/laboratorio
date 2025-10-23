@@ -8,7 +8,7 @@ docker run -d -p 8080:80 --name mi-nginx nginx
 docker run -d -p 8080:80 --name juego-2048 alexwhen/docker-2048
 
 # 4. DOOM - ¡El clásico! 🎮
-docker run -p 8080:8080 mattipaksula/http-doom
+docker run -d -p 8080:8080 mattipaksula/http-doom
 
 # Whiteboard (pizarra online)
 docker run -d -p 8080:8080 --name whiteboard rofl256/whiteboard
